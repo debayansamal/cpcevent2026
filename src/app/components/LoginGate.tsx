@@ -5,9 +5,8 @@ import { useState, useEffect } from "react";
 import { Shield, AlertTriangle, Cpu } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 
-export function LoginGate({ onAuthSuccess }: { onAuthSuccess: (user: any) => void }) {
+export function LoginGate({ authError, setAuthError, onAuthSuccess }: { authError: string; setAuthError: (err: string) => void; onAuthSuccess: (user: any) => void }) {
   const [pupilOffset, setPupilOffset] = useState({ x: 0, y: 0 });
-  const [authError, setAuthError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Track cursor position to update pupil offset and tilt positions
