@@ -1,0 +1,45 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00f0ff, #3b82f6);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #38bdf8, #00f0ff);
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(0, 240, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Custom animations */
+@keyframes delay-1000 {
+  0%, 100% {
+    animation-delay: 1000ms;
+  }
+}
+
+/* Prevent scrollbar from shifting content */
+body {
+  overflow-y: scroll;
+}
+

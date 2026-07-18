@@ -1,0 +1,20 @@
+# dependencies
+/node_modules
+/.pnpm-store
+/node_modules_old
+/next-temp_old
+
+# next.js
+/.next/
+/out/
+
+# local env files (IMPORTANT: Keeps your database keys private)
+.env*.local
+
+# vercel
+.vercel
+
+# misc
+.DS_Store
+Thumbs.db
+*.log
